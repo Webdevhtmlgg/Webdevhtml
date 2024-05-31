@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-image: url('JK.jpg') ;
+      background-size:cover;
+      
+    }
+    #typing-text {
+      font-size: 50px;
+      border: 0px solid o;
+      padding: 30px;
+      display: inline-block;
+      color:white;
+    }
+     h1 {
+       font-size:50px;
+       color:white;
+     }
+  </style>
+</head>
+<body>
+    <h1> "Happy 3rd Monthsarry"</h1>
+  <div id="typing-text"></div>
+  <img src=".jpeg" alt="hello" height="500" width="500" >
+  
+  <img src=".jpeg" alt="hello" height="600" width="600" >
+
+  <script>
+    const text = "Happy 3rd Monthsarry loveeee. bilis ng panahon noo? parang dati bumibili lang ako ng yelo sayo, naalala mo yon? first conversation right? sobrang saya ko, and thankful ako kay god na may nakilala akong katulad mo. at lalo pa ako nasabik makita ka, yayakapin ka, at aalagaan. hindi ko naman akalain na magiging seryoso ako sa isang relationship eh. peroo thank you sa mga gift mo sa akin, at effort. thank you for understanding my situation loveee. wala ng hihigit sayoo. wala na ako masabi yun lang. happy 3rd monthsarry ulit. iloveyouuuusoomuchhh, mwuaaaaaaaa. mahal na mahal kitaaa, wag mo kakalimutan yan. nandito lang ako sa likod mo lagi naka support sa mga gusto mo, yun lang. happy 3rd monthsarry. ";
+    let index = 0;
+
+    function typeText() {
+      document.getElementById("typing-text").textContent += text[index];
+      index++;
+
+      if (index < text.length) {
+        setTimeout(typeText, 50); // Adjust typing speed here (in milliseconds)
+      }
+    }
+
+    typeText();
+  </script>
+</body>
+</html>
